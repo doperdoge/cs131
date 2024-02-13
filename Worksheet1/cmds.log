@@ -1,0 +1,337 @@
+    1  wget www.github.com
+    2  pwd
+    3  mkdir test
+    4  ls
+    5  rmdir test
+    6  ls
+    7  mkdir sampleProject
+    8  ls -ltr
+    9  cd sampleProject/
+   10  touch sampleFile.txt
+   11  git init
+   12  git add
+   13  git status
+   14  git config --global user.email adudeof@gmail.com
+   15  git config --global user.name Conner
+   16  cd ~/.ssh && ssh-keygen
+   17  mkdir ~/.ssh
+   18  cat id_rsa.pub
+   19  rmdir ~/.ssh
+   20  --
+   21  cd
+   22  cd ~/.ssh
+   23  mkdir ~/.ssh
+   24  cd ~/.ssh
+   25  ssh-keygen
+   26  exit
+   27  cd ~/.ssh
+   28  ssh-keygen
+   29  cat id_rsa.pub
+   30  mkdir sampleProject
+   31  ls -ltr
+   32  cd sampleProject/
+   33  touch sampleFile.txt
+   34  git init
+   35  git add
+   36  git add .
+   37  git status
+   38  git remote add origin git@github.com:doperdoge/sampleProject.git
+   39  git commit -m "<Some Message>"
+   40  git push --set-upstream origin master
+   41  exit
+   42  passwd
+   43  cd ~/.ssh
+   44  ssh-keygen
+   45  git config --global user.name Conner
+   46  git config --global user.email adudeof@gmail.com
+   47  git --version
+   48  ls ~/.ssh
+   49  ssh.keygen
+   50  cd ~/.ssh
+   51  ssh.keygen
+   52  ssh-keygen
+   53  ls
+   54  pwd
+   55  cd sampleProject/
+   56  ls
+   57  cat sampleFile.txt 
+   58  ls -l
+   59  ls -
+   60  man ls 
+   61  clear
+   62  mkdir class1
+   63  cd class1
+   64  cd ..
+   65  touch aaaa.txt
+   66  touch ab.txt
+   67  touch dd.c
+   68  ls ?.txt
+   69  touch k.txt
+   70  ls ?.txt
+   71  ls ??.txt
+   72  ls ????.txt
+   73  ls *.txt
+   74  vi sample.txt
+   75  cat sample.txt
+   76  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+   77  cat spotify-2023.csv 
+   78  head spotify-2023.csv 
+   79  tail spotify-2023.csv 
+   80  tail -15 spotify-2023.csv 
+   81  more spotify-2023.csv 
+   82  tail -f spotify-2023.csv 
+   83  nano nanoSample.txt
+   84  vi sampleFile.txt 
+   85  cd ..
+   86  exit
+   87  wget www.github.com
+   88  clear
+   89  vi spotify-2023.csv
+   90  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+   91  vi spotify-2023.csv 
+   92  head spotify-2023.csv 
+   93  sort spotify-2023.csv 
+   94  vi spotify-2023.csv 
+   95  vi test.txt
+   96  cat test.txt 
+   97  sort test.txt 
+   98  ls
+   99  vi demo.txt
+  100  ls
+  101  vi demo.txt
+  102  ls
+  103  echo "hello world" 
+  104  echo "hello world" > demo.txt 
+  105  cat demo.txt 
+  106  echo "hello world2" > demo.txt
+  107  cat demo.txt 
+  108  echo "hello world3" >> demo.txt
+  109  cat demo.txt 
+  110  echo "hello world4" >> demo.txt 
+  111  cat demo.txt 
+  112  wget www.github.com
+  113  exit
+  114  clear
+  115  vi sample.txt
+  116  wc sample
+  117  wc sample.txt
+  118  cat sample.txt
+  119  sort sample.txt
+  120  w -l sample.txt
+  121  wc -l sample.txt
+  122  grep john sample.txt
+  123  grep line1 sample.txt
+  124  grep -i john sample.txt
+  125  grep -i line1 sample.txt
+  126  grep -vi line2 sample.txt
+  127  echo "hello world" >> sample.txt
+  128  cat sample.txt
+  129  vi sample.txt
+  130  cat sample.txt
+  131  echo $HOME
+  132  ~
+  133  echo $SHELL
+  134  ~
+  135  a="Hello World"
+  136  echo $a
+  137  a=b
+  138  echo $a
+  139  echo $0
+  140  echo $i
+  141  echo $1
+  142  vi testFile.txt
+  143  echo "line3" > testFile.txt
+  144  cat testFile.txt
+  145  echo "hello" > testFile.txt
+  146  cat testFile.txt
+  147  a=bcd
+  148  echo $a
+  149  a=bdc+e
+  150  echo $a
+  151  b=5
+  152  a=$((b+1))
+  153  echo$a
+  154  echo $a
+  155  a="ugs oe"
+  156  $c=bcd
+  157  c=abc
+  158  dATE
+  159  date
+  160  export DATETIME='date'
+  161  OUTDIR=display
+  162  cat i.txt
+  163  cat $
+  164  echo $?
+  165  echo "hello" > testFile.txt
+  166  echo $?
+  167  echo 'pwd'
+  168  ls
+  169  ls -a
+  170  cat .bash_histroy
+  171  cat .bash_history
+  172  la -a
+  173  ls - a
+  174  ls -a
+  175  vi .bashrc
+  176  ls -a
+  177  vi .bashrc
+  178  exit
+  179  wget www.github.com
+  180  mkdir myproject
+  181  git init
+  182  cd myproject/
+  183  touch text.txt
+  184  ls
+  185  git status
+  186  git add text.txt
+  187  git status
+  188  git commit -m "This is my first commit"
+  189   git checkout -b <my branch name>
+  190  git checkout -b <my branch name>
+  191  git checkout -b testBranch
+  192  git branch
+  193  git remote add origin git@github.com:doperdoge/testRepo.git
+  194  git push -u origin master
+  195  git push origin testBranch
+  196  cd..
+  197  cd ..
+  198  mkdir Worksheet1
+  199  cd Worksheet1
+  200  history > cmds.log
+  201  cmds.log
+  202  add cmds.log
+  203  git init
+  204  history > cmds.log
+  205  git add cmds.log
+  206  ls
+  207  git commit -m "Worksheet1 commit"
+  208  git remote add origin git@github.com:doperdoge/cs131.git
+  209  git push -u origin master
+  210  git add Worksheet1
+  211  ls
+  212  git init
+  213  history > cmds.log
+  214  touch cmds.log
+  215  ls
+  216  git status
+  217  git add cmds.log
+  218  git commit -m "cmdslog commit"
+  219  git push -u origin master
+  220  cd ..
+  221  cd Worksheet1/
+  222  git init
+  223  history > cmds.log
+  224  touch cmds.log
+  225  ls
+  226  git status
+  227  git add cmds.log
+  228  git status
+  229  git push -u origin master 
+  230  cd ..
+  231  cd Worksheet1/
+  232  git status 
+  233  history > cmds.log
+  234  git add cmds.log
+  235  clear
+  236  cd ..
+  237  cd Worksheet1/
+  238  git init
+  239  history > cmds.log
+  240  tough cmds.log
+  241  touch cmds.log
+  242  git status
+  243  git add cmds.log
+  244  status
+  245  git status
+  246  git commit -m "Redo"
+  247  git push -u origin master
+  248  cd ..
+  249  rmdir Worksheet1
+  250  mkdir Worksheet1
+  251  cd Worksheet1/
+  252  git init
+  253  history > cmds.log
+  254  touch cmds.log
+  255  ls
+  256  git status
+  257  git add cmds.log
+  258  git commit -m "retry"
+  259  git push -h origin master
+  260  git push -u origin master
+  261  git add Worksheet1
+  262  cd ..
+  263  mkdir TestSpace
+  264  cd TestSpace/
+  265  touch TextFile.txt
+  266  ls
+  267  git init
+  268  touch TextFile.txt
+  269  ls
+  270  git commit -m "new commit"
+  271  git add TextFile.txt
+  272  git status
+  273  git commit -m "new commit"
+  274  git remote add origin git@github.com:doperdoge/TestSpace.git
+  275  git push origin master
+  276  cd ..
+  277  cd Worksheet1
+  278  cd ..
+  279  cd Worksheet1/
+  280  git init
+  281  history > cmds.log
+  282  touch cmds.log
+  283  ls
+  284  git status
+  285  git add cmds.log
+  286  git commit
+  287  git push -u origin master
+  288  git pull
+  289  git merge
+  290  ls
+  291  cd ..
+  292  git add Worksheet1
+  293  clear
+  294  cd Worksheet1/
+  295  git init
+  296  history > cmds.log
+  297  touch cmds.log
+  298  ls
+  299  status
+  300  git status 
+  301  git add cmds.log
+  302  git add
+  303  git add .
+  304  git status
+  305  git commit -m "Retry commit"
+  306  git remote add origin git@github.com:doperdoge/cs131.git
+  307  git push origin master
+  308  cd ..
+  309  mkdir cs131
+  310  cd cs131
+  311  touch Worksheet1
+  312  git init
+  313  toush Worksheet1
+  314  touch Worksheet1
+  315  cd Worksheet1
+  316  mkdir Worksheet1
+  317  rmdir Worksheet1
+  318  git remote add origin git@github.com:doperdoge/cs131.git
+  319  cd ..
+  320  rmdir Worksheet1
+  321  cd Worksheet1
+  322  rm cmds.log
+  323  cd ..
+  324  rmdir Worksheet1
+  325  rm -r Worksheet1
+  326  y
+  327  cd cs131/
+  328  mkdir Worksheet1
+  329  cd ..
+  330  rmdir Worksheet1
+  331  cd cs131
+  332  ls
+  333  rm Worksheet1
+  334  git init
+  335  mkdir Worksheet1
+  336  cd Worksheet1
+  337  history > cmds.log
