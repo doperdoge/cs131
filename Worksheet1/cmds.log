@@ -335,3 +335,17 @@
   335  mkdir Worksheet1
   336  cd Worksheet1
   337  history > cmds.log
+  338  touch cmds.log
+  339  ls
+  340  git status
+  341  git ass cmds.log
+  342  git add cmds.log
+  343  gits status
+  344  git status
+  345  git commit -m "new commit"
+  346  cd ..
+  347  git commit -m "new commit"
+  348  git push origin master
+  349  wget www.github.com
+  350  cd Worksheet1
+  351  history > cmds.log
