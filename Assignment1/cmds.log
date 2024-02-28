@@ -1,0 +1,619 @@
+    1  wget www.github.com
+    2  pwd
+    3  mkdir test
+    4  ls
+    5  rmdir test
+    6  ls
+    7  mkdir sampleProject
+    8  ls -ltr
+    9  cd sampleProject/
+   10  touch sampleFile.txt
+   11  git init
+   12  git add
+   13  git status
+   14  git config --global user.email adudeof@gmail.com
+   15  git config --global user.name Conner
+   16  cd ~/.ssh && ssh-keygen
+   17  mkdir ~/.ssh
+   18  cat id_rsa.pub
+   19  rmdir ~/.ssh
+   20  --
+   21  cd
+   22  cd ~/.ssh
+   23  mkdir ~/.ssh
+   24  cd ~/.ssh
+   25  ssh-keygen
+   26  exit
+   27  cd ~/.ssh
+   28  ssh-keygen
+   29  cat id_rsa.pub
+   30  mkdir sampleProject
+   31  ls -ltr
+   32  cd sampleProject/
+   33  touch sampleFile.txt
+   34  git init
+   35  git add
+   36  git add .
+   37  git status
+   38  git remote add origin git@github.com:doperdoge/sampleProject.git
+   39  git commit -m "<Some Message>"
+   40  git push --set-upstream origin master
+   41  exit
+   42  passwd
+   43  cd ~/.ssh
+   44  ssh-keygen
+   45  git config --global user.name Conner
+   46  git config --global user.email adudeof@gmail.com
+   47  git --version
+   48  ls ~/.ssh
+   49  ssh.keygen
+   50  cd ~/.ssh
+   51  ssh.keygen
+   52  ssh-keygen
+   53  ls
+   54  pwd
+   55  cd sampleProject/
+   56  ls
+   57  cat sampleFile.txt 
+   58  ls -l
+   59  ls -
+   60  man ls 
+   61  clear
+   62  mkdir class1
+   63  cd class1
+   64  cd ..
+   65  touch aaaa.txt
+   66  touch ab.txt
+   67  touch dd.c
+   68  ls ?.txt
+   69  touch k.txt
+   70  ls ?.txt
+   71  ls ??.txt
+   72  ls ????.txt
+   73  ls *.txt
+   74  vi sample.txt
+   75  cat sample.txt
+   76  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+   77  cat spotify-2023.csv 
+   78  head spotify-2023.csv 
+   79  tail spotify-2023.csv 
+   80  tail -15 spotify-2023.csv 
+   81  more spotify-2023.csv 
+   82  tail -f spotify-2023.csv 
+   83  nano nanoSample.txt
+   84  vi sampleFile.txt 
+   85  cd ..
+   86  exit
+   87  wget www.github.com
+   88  clear
+   89  vi spotify-2023.csv
+   90  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+   91  vi spotify-2023.csv 
+   92  head spotify-2023.csv 
+   93  sort spotify-2023.csv 
+   94  vi spotify-2023.csv 
+   95  vi test.txt
+   96  cat test.txt 
+   97  sort test.txt 
+   98  ls
+   99  vi demo.txt
+  100  ls
+  101  vi demo.txt
+  102  ls
+  103  echo "hello world" 
+  104  echo "hello world" > demo.txt 
+  105  cat demo.txt 
+  106  echo "hello world2" > demo.txt
+  107  cat demo.txt 
+  108  echo "hello world3" >> demo.txt
+  109  cat demo.txt 
+  110  echo "hello world4" >> demo.txt 
+  111  cat demo.txt 
+  112  wget www.github.com
+  113  exit
+  114  clear
+  115  vi sample.txt
+  116  wc sample
+  117  wc sample.txt
+  118  cat sample.txt
+  119  sort sample.txt
+  120  w -l sample.txt
+  121  wc -l sample.txt
+  122  grep john sample.txt
+  123  grep line1 sample.txt
+  124  grep -i john sample.txt
+  125  grep -i line1 sample.txt
+  126  grep -vi line2 sample.txt
+  127  echo "hello world" >> sample.txt
+  128  cat sample.txt
+  129  vi sample.txt
+  130  cat sample.txt
+  131  echo $HOME
+  132  ~
+  133  echo $SHELL
+  134  ~
+  135  a="Hello World"
+  136  echo $a
+  137  a=b
+  138  echo $a
+  139  echo $0
+  140  echo $i
+  141  echo $1
+  142  vi testFile.txt
+  143  echo "line3" > testFile.txt
+  144  cat testFile.txt
+  145  echo "hello" > testFile.txt
+  146  cat testFile.txt
+  147  a=bcd
+  148  echo $a
+  149  a=bdc+e
+  150  echo $a
+  151  b=5
+  152  a=$((b+1))
+  153  echo$a
+  154  echo $a
+  155  a="ugs oe"
+  156  $c=bcd
+  157  c=abc
+  158  dATE
+  159  date
+  160  export DATETIME='date'
+  161  OUTDIR=display
+  162  cat i.txt
+  163  cat $
+  164  echo $?
+  165  echo "hello" > testFile.txt
+  166  echo $?
+  167  echo 'pwd'
+  168  ls
+  169  ls -a
+  170  cat .bash_histroy
+  171  cat .bash_history
+  172  la -a
+  173  ls - a
+  174  ls -a
+  175  vi .bashrc
+  176  ls -a
+  177  vi .bashrc
+  178  exit
+  179  wget www.github.com
+  180  mkdir myproject
+  181  git init
+  182  cd myproject/
+  183  touch text.txt
+  184  ls
+  185  git status
+  186  git add text.txt
+  187  git status
+  188  git commit -m "This is my first commit"
+  189   git checkout -b <my branch name>
+  190  git checkout -b <my branch name>
+  191  git checkout -b testBranch
+  192  git branch
+  193  git remote add origin git@github.com:doperdoge/testRepo.git
+  194  git push -u origin master
+  195  git push origin testBranch
+  196  cd..
+  197  cd ..
+  198  mkdir Worksheet1
+  199  cd Worksheet1
+  200  history > cmds.log
+  201  cmds.log
+  202  add cmds.log
+  203  git init
+  204  history > cmds.log
+  205  git add cmds.log
+  206  ls
+  207  git commit -m "Worksheet1 commit"
+  208  git remote add origin git@github.com:doperdoge/cs131.git
+  209  git push -u origin master
+  210  git add Worksheet1
+  211  ls
+  212  git init
+  213  history > cmds.log
+  214  touch cmds.log
+  215  ls
+  216  git status
+  217  git add cmds.log
+  218  git commit -m "cmdslog commit"
+  219  git push -u origin master
+  220  cd ..
+  221  cd Worksheet1/
+  222  git init
+  223  history > cmds.log
+  224  touch cmds.log
+  225  ls
+  226  git status
+  227  git add cmds.log
+  228  git status
+  229  git push -u origin master 
+  230  cd ..
+  231  cd Worksheet1/
+  232  git status 
+  233  history > cmds.log
+  234  git add cmds.log
+  235  clear
+  236  cd ..
+  237  cd Worksheet1/
+  238  git init
+  239  history > cmds.log
+  240  tough cmds.log
+  241  touch cmds.log
+  242  git status
+  243  git add cmds.log
+  244  status
+  245  git status
+  246  git commit -m "Redo"
+  247  git push -u origin master
+  248  cd ..
+  249  rmdir Worksheet1
+  250  mkdir Worksheet1
+  251  cd Worksheet1/
+  252  git init
+  253  history > cmds.log
+  254  touch cmds.log
+  255  ls
+  256  git status
+  257  git add cmds.log
+  258  git commit -m "retry"
+  259  git push -h origin master
+  260  git push -u origin master
+  261  git add Worksheet1
+  262  cd ..
+  263  mkdir TestSpace
+  264  cd TestSpace/
+  265  touch TextFile.txt
+  266  ls
+  267  git init
+  268  touch TextFile.txt
+  269  ls
+  270  git commit -m "new commit"
+  271  git add TextFile.txt
+  272  git status
+  273  git commit -m "new commit"
+  274  git remote add origin git@github.com:doperdoge/TestSpace.git
+  275  git push origin master
+  276  cd ..
+  277  cd Worksheet1
+  278  cd ..
+  279  cd Worksheet1/
+  280  git init
+  281  history > cmds.log
+  282  touch cmds.log
+  283  ls
+  284  git status
+  285  git add cmds.log
+  286  git commit
+  287  git push -u origin master
+  288  git pull
+  289  git merge
+  290  ls
+  291  cd ..
+  292  git add Worksheet1
+  293  clear
+  294  cd Worksheet1/
+  295  git init
+  296  history > cmds.log
+  297  touch cmds.log
+  298  ls
+  299  status
+  300  git status 
+  301  git add cmds.log
+  302  git add
+  303  git add .
+  304  git status
+  305  git commit -m "Retry commit"
+  306  git remote add origin git@github.com:doperdoge/cs131.git
+  307  git push origin master
+  308  cd ..
+  309  mkdir cs131
+  310  cd cs131
+  311  touch Worksheet1
+  312  git init
+  313  toush Worksheet1
+  314  touch Worksheet1
+  315  cd Worksheet1
+  316  mkdir Worksheet1
+  317  rmdir Worksheet1
+  318  git remote add origin git@github.com:doperdoge/cs131.git
+  319  cd ..
+  320  rmdir Worksheet1
+  321  cd Worksheet1
+  322  rm cmds.log
+  323  cd ..
+  324  rmdir Worksheet1
+  325  rm -r Worksheet1
+  326  y
+  327  cd cs131/
+  328  mkdir Worksheet1
+  329  cd ..
+  330  rmdir Worksheet1
+  331  cd cs131
+  332  ls
+  333  rm Worksheet1
+  334  git init
+  335  mkdir Worksheet1
+  336  cd Worksheet1
+  337  history > cmds.log
+  338  touch cmds.log
+  339  ls
+  340  git status
+  341  git ass cmds.log
+  342  git add cmds.log
+  343  gits status
+  344  git status
+  345  git commit -m "new commit"
+  346  cd ..
+  347  git commit -m "new commit"
+  348  git push origin master
+  349  wget www.github.com
+  350  cd Worksheet1
+  351  history > cmds.log
+  352  touch cmds.log
+  353  git add cmds.log
+  354  git status
+  355  git commit -m "final commit"
+  356  git push origin master
+  357  cd .. 
+  358  cd ..
+  359  exit
+  360  pwd
+  361  /etc/passwd
+  362  cat /etc/passwd
+  363  grep connersp24 /etc/passwd
+  364  cat /etc/shadow
+  365  sudo grep connerps24 /etc/shadow
+  366  grep s78 /etc/group
+  367  grep :0: /etc/group
+  368  vi linux_intro.txt
+  369  ls
+  370  ls -l
+  371  chown connersp24 test.txt
+  372  ls -l
+  373  chgrp student /tmp/newfile.txt
+  374  useradd ken 
+  375  ***** echo "Current date time is `date`" >> sample.txt
+  376  * * * * * echo "Current date time is `date`" >> sample.txt
+  377  0 2 * * * echo ""Current date time is `date`" >> test.txt
+  378  test.txt
+  379  0 2 * * * echo "Current date time is `date`" >> test.txt
+  380  02*** echo "Current date time is `date`" >> test.txt
+  381  0 2 * * * echo "Current date time is `date`" >> test.txt
+  382  crontab file
+  383  crontab test.txt
+  384  exit
+  385  vi file.txt
+  386  vi file.txt 
+  387  ls *.txt
+  388  vi a.txt
+  389  vi b.txt
+  390  vi c.txt
+  391  mkdir newDir
+  392  find -name newDir
+  393  exit
+  394  ls
+  395  ls | grep test
+  396  ls | grep temp
+  397  grep Taylor spotify-2023.csv 
+  398  ls | grep Taylor spotify-2023.csv 
+  399  ls | grep test | wc -l
+  400  grep taylor spotify-2023.csv | grep "ed sheeran"
+  401  grep -i taylor spotify-2023.csv | grep -i "ed sheeran"
+  402  grep -i taylor spotify-2023.csv | grep -i "ed sheeran" | wc -l
+  403  ls -a
+  404  ls -al
+  405  chmod 764 file.txt
+  406  chmod 764 test.txt
+  407  ls -la
+  408  clear
+  409  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  410  grep *"United States" Global\ YouTube\ Statistics.csv 
+  411  grep -i "Inited States" Global\ YouTube\ Statistics.csv 
+  412  grep -i "United States" Global\ YouTube\ Statistics.csv
+  413  grep Music Global\ YouTube\ Statistics.csv 
+  414  vi counts.txt
+  415  wc -l Music Global\ YouTube\ Statistics.csv 
+  416  wc -l "Music GLobal
+  417  wc -l "Music" Global\ YouTube\ Statistics.csv 
+  418  wc Global\ YouTube\ Statistics.csv 
+  419  grep Music Global\ YouTube\ Statistics.csv | wc
+  420  exit
+  421  clear
+  422  grep Music Global\ YouTube\ Statistics.csv wc
+  423  grep Music Global\ YouTube\ Statistics.csv | wc
+  424  clear
+  425  date
+  426  date ls 
+  427  date next
+  428  date -d
+  429  date --help
+  430  cd
+  431  cat Global\ YouTube\ Statistics.csv 
+  432  clear
+  433  stat Global\ YouTube\ Statistics.csv 
+  434  fstat Global\ YouTube\ Statistics.csv 
+  435  ls
+  436  vi d.txt
+  437  mv d.txt e.txt
+  438  ls\
+  439  ls
+  440  vi e.txt
+  441  mv e.txt d.txt
+  442  cat d.txt
+  443  ls
+  444  vi e.txt
+  445  mv d.txt e.txt
+  446  cat e.txt
+  447  cd cs131
+  448  cd ..
+  449  cd cs131
+  450  ls
+  451  mkdir Worksheet2
+  452  cd Worksheet
+  453  cd Worksheet2
+  454  cd .. 
+  455  cd ..
+  456  exit 
+  457  grep Music Global\ YouTube\ Statistics.csv 
+  458  vi counts.txt
+  459  grep Music Global\ YouTube\ Statistics.csv > counts.txt
+  460  cat counts.txt
+  461  man wc
+  462  grep Music Global\ YouTube\ Statistics.csv | wc -l -m >> counts.txt
+  463  cat counts.txt
+  464  grep Music Global\ YouTube\ Statistics.csv | wc
+  465  man wc
+  466  vi counts.txt
+  467  grep Music Global\ YouTube\ Statistics.csv | wc -l -w >> counts.txt
+  468  cat counts.txt
+  469  grep Music Global\ YouTube\ Statistics.csv | wc
+  470  vi counts.txt
+  471  history > cmds.log
+  472  vi cmds.log 
+  473  cd cs131
+  474  cd Worksheet2
+  475  ls
+  476  vi counts.txt
+  477  ls
+  478  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  479  grep Music Global\ YouTube\ Statistics.csv > counts.txt
+  480  cat counts.txt
+  481  grep Music Global\ YouTube\ Statistics.csv | wc -l -w >> counts.txt
+  482  vi counts.txt
+  483  grep Music Global\ YouTube\ Statistics.csv | wc -l -w >> counts.txt
+  484  vi counts.txt
+  485  history > cmds.log
+  486  vi cmds.log 
+  487  git status
+  488  git add counts.txt
+  489  git add cmds.log
+  490  git status
+  491  git commit -m "Worksheet Commit"
+  492  git push -u origin master
+  493  /usr/bin/ls | tail
+  494  cd bin
+  495  printenv
+  496  ls /usr/bin
+  497  which cat
+  498  whereis cat
+  499  whereis la
+  500  whereis ;s 
+  501  whereis ls
+  502  ls -k
+  503  ps 
+  504  ps -aux
+  505  ps -aux | head
+  506  ps -aux head
+  507  ps -aux | head
+  508  clear
+  509  ps aux | grep launch
+  510  echo $?
+  511  top
+  512  clear
+  513  clear 
+  514  pwd
+  515  find /etc/ - type f -name "*.txt
+  516  "
+  517  exit
+  518  cat /dev/tty
+  519  cat
+  520  clear
+  521  cat
+  522  ls
+  523  echo "Good Morning" > /dev/tty
+  524  cat /dev/tty
+  525  cd sa131
+  526  cd cs131
+  527  mkdir Assignment1
+  528  cd Assignment1/
+  529  man echo
+  530  echo $SHELL
+  531  vi Assignment1.txt
+  532  vi Assignment1.txt 
+  533  echo $HOME $PATH
+  534  echo $HOOME | $PATH
+  535  echo $HOME | $PATH
+  536  echo $HOME
+  537  vi Assignment1.txt 
+  538  mkdir myDir
+  539  chmod man
+  540  man chmod
+  541  cat /etc/passwd
+  542  cat passwd 
+  543  cat /etc/passwd | grep connersp24
+  544  cat /etc/passwd | id -u connersp24
+  545  vi Assignment1.txt 
+  546  groups connersp24
+  547  vi Assignment1.txt 
+  548  chmod u-w myDir/
+  549  ls
+  550  ls -l
+  551  cd myDir/
+  552  vi test.txt
+  553  ls
+  554  vi As
+  555  cd ..
+  556  vi Assignment1.txt 
+  557  mkdir myDir2
+  558  mkdir myDir3
+  559  ls
+  560  cd myDir2
+  561  vi myFile.txt
+  562  mv myFile.txt myDir2 myDir3
+  563  cd ..
+  564  cd myDir2
+  565  cd ..
+  566  cd myDir3
+  567  echo $PATH
+  568  cd..
+  569  cd ..
+  570  cd myDir2
+  571  mv myFile.txt /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+  572  cd ..
+  573  cd myDir3
+  574  cd ..
+  575  find $PWD -type f -name myDir3
+  576  man mv
+  577  cd myDir2
+  578  mv -t myFile.txt myDir3
+  579  man mv
+  580  cd ..
+  581  myDir3
+  582  cd myDir2
+  583  cd ..
+  584  cd myDir3
+  585  ls
+  586  cd ..
+  587  ls -l
+  588  find $PWD -type f -name 
+  589  find $PWD -type d -name myDir3
+  590  cd myDir2
+  591  mv myFile.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Assignment1/myDir3
+  592  ls
+  593  cd ..
+  594  cd myDir3
+  595  ls
+  596  cd ..
+  597  vi Assignment1.txt 
+  598  man free
+  599  free -m
+  600  vi Assignment1.txt 
+  601  cd /etc/
+  602  ls
+  603  grep os
+  604  ls | grep os
+  605  cd os-release
+  606  cat os-release
+  607  ls -l | grep os-release
+  608  cd ..
+  609  cd cs131
+  610  cd ..
+  611  cd /etc/
+  612  cd $
+  613  cd ..
+  614  cd HOME
+  615  cd
+  616  cd cs131
+  617  cd Assignment1/
+  618  vi Assignment1.txt 
+  619  history > cmds.log

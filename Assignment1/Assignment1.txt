@@ -1,0 +1,13 @@
+1) mkdir was used to make the Assignment1 directory
+2) The echo of my current shell was /bin/bash and the command used was echo $SHELL
+3) The echo if my home directory path is /mnt/scratch/SP24_CS131_Jyotika/connersp24 and the command: echo $HOME. was used
+4) My UID is 1211 and I found this through the command: cat /etc/passwd | id -u conner sp24. I also belong to the groups with myself connerps24 as well as s78. I used the command: groups connersp24. to figure that out.  
+5) To create the myDir directory I used: mkdir myDir. To remove the permissions I used: chmod u-w myDir/. I am still allowed to cd into the directory as well as use ls and ls -l, but I am not able to create a file under it. 
+6) To create the new directories I used: mkdir myDir2. mkdir myDir3.
+7) I used the vi command to create the file "myFile.txt" To move the file from myDir2 to myDir3 I used the command:
+mv myFile.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Assignment1/myDir3
+8)                total        used        free      shared  buff/cache   available
+Mem:          71367       32047       20279        3568       19041       34293 
+I used the command freee -m to display the RAM in mebibytes
+9) The operating system version is  VERSION="8.6 (Ootpa)" and the file contaning this information is "os-release" To find this file I cd to /etc/ and used ls and gerp to find the file with the os information. 
+10) The permissions given to the all users are rwx. I founf this out my using ls -l
