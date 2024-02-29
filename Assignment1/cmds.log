@@ -524,17 +524,22 @@
   524  cat /dev/tty
   525  cd sa131
   526  cd cs131
+Assignment 1
+1)
   527  mkdir Assignment1
   528  cd Assignment1/
+2)
   529  man echo
   530  echo $SHELL
   531  vi Assignment1.txt
-  532  vi Assignment1.txt 
+  532  vi Assignment1.txt
+3) 
   533  echo $HOME $PATH
   534  echo $HOOME | $PATH
   535  echo $HOME | $PATH
   536  echo $HOME
-  537  vi Assignment1.txt 
+  537  vi Assignment1.txt
+4) 
   538  mkdir myDir
   539  chmod man
   540  man chmod
@@ -544,6 +549,7 @@
   544  cat /etc/passwd | id -u connersp24
   545  vi Assignment1.txt 
   546  groups connersp24
+5)
   547  vi Assignment1.txt 
   548  chmod u-w myDir/
   549  ls
@@ -553,12 +559,15 @@
   553  ls
   554  vi As
   555  cd ..
-  556  vi Assignment1.txt 
+  556  vi Assignment1.txt
+6) 
   557  mkdir myDir2
   558  mkdir myDir3
   559  ls
   560  cd myDir2
+7)
   561  vi myFile.txt
+8)
   562  mv myFile.txt myDir2 myDir3
   563  cd ..
   564  cd myDir2
@@ -594,7 +603,8 @@
   594  cd myDir3
   595  ls
   596  cd ..
-  597  vi Assignment1.txt 
+  597  vi Assignment1.txt
+9) 
   598  man free
   599  free -m
   600  vi Assignment1.txt 
@@ -604,6 +614,7 @@
   604  ls | grep os
   605  cd os-release
   606  cat os-release
+10)
   607  ls -l | grep os-release
   608  cd ..
   609  cd cs131
