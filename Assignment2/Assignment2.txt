@@ -20,8 +20,31 @@
  
 4) a: the file is open 
    b: after entering "ps -u connersp24" in the second terminal there seemed to be one extra process in the list of processes. The process ID for the vim was 3566273 
+  86087 ?        00:06:18 systemd
+  86088 ?        00:00:00 (sd-pam)
+ 105350 ?        00:00:00 tmux: server
+ 105351 pts/15   00:00:00 bash
+ 119234 pts/6    00:00:00 bash
+ 119542 pts/20   00:00:00 bash
+3528974 ?        00:00:00 sshd
+3528975 pts/38   00:00:00 bash
+3563783 ?        00:00:00 sshd
+3563784 pts/29   00:00:00 bash
+3566273 pts/38   00:00:00 vim
+3566479 pts/29   00:00:00 ps   
    c: the termial was force quited 
    d: after entering "ps -u connersp24" the vim process was gone because the process was forefully terminated on the other terminal
+  86087 ?        00:06:18 systemd
+  86088 ?        00:00:00 (sd-pam)
+ 105350 ?        00:00:00 tmux: server
+ 105351 pts/15   00:00:00 bash
+ 119234 pts/6    00:00:00 bash
+ 119542 pts/20   00:00:00 bash
+3528974 ?        00:00:00 sshd
+3528975 pts/38   00:00:00 bash
+3563783 ?        00:00:00 sshd
+3563784 pts/29   00:00:00 bash
+3566887 pts/29   00:00:00 ps
 
 5) The init process in Linux is the first process that runs on start up of the VM. The process ID for the init process is 1. The command used to find this was "ps aux | grep systemd"
 
