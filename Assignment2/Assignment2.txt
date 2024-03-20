@@ -1,0 +1,28 @@
+1) a: We are trying to get all the non restricted /etc files into one.txt and the restricted /etc files into two.txt
+   b: Using "cat one.txt" shows the etc files that are not permission denied, using "cat two.txt" shows the etc files that are permission denied
+
+2) 1: March, 2006 with 15 channels 
+   2: July, 2014 with 13 channels 
+   3: August, 2014 with 12 channels 
+   The command used to find this was "cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort" the -d used in cut along with the "," was to cut out all the content around commas 20-21 to get the year and the month. The -c in uniq was to show the number of duplicates for the lines that had duplicates. Sort was just used to sort the info 
+
+3) "ps -u connersp24" is used to figure what processes I own 
+   Output:   
+  86087 ?        00:06:18 systemd
+  86088 ?        00:00:00 (sd-pam)
+ 105350 ?        00:00:00 tmux: server
+ 105351 pts/15   00:00:00 bash
+ 119234 pts/6    00:00:00 bash
+ 119542 pts/20   00:00:00 bash
+3528974 ?        00:00:00 sshd
+3528975 pts/38   00:00:00 bash
+3563015 pts/38   00:00:00 ps
+ 
+4) a: the file is open 
+   b: after entering "ps -u connersp24" in the second terminal there seemed to be one extra process in the list of processes. The process ID for the vim was 3566273 
+   c: the termial was force quited 
+   d: after entering "ps -u connersp24" the vim process was gone because the process was forefully terminated on the other terminal
+
+5) The init process in Linux is the first process that runs on start up of the VM. The process ID for the init process is 1. The command used to find this was "ps aux | grep systemd"
+
+6) The "ps aux" command is a command that shows all the process and their process IDs, cpu%, mem%, and other information. The information given can allow a user to kill certain commands if needed using the process ID.  

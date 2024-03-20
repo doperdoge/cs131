@@ -1,0 +1,95 @@
+Assignment 2
+  749  cd cs131
+  750  mkdir Assignment2
+  751  vi Assignment2.txt
+1.
+  752  find /etc -type f > one.txt 2> two.txt
+  753  vi Assignment2.txt 
+  754  cat one.txt
+  755  cat two.txt
+  756  vi Assignment2.txt
+2. 
+  757  man cut
+  758  ls
+  759  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  760  cat Global\ YouTube\ Statistics.csv 
+  761  sort -k2 Global\ YouTube\ Statistics.csv 
+  762  sort -k16 Global\ YouTube\ Statistics.csv 
+  763  cut -d "," -f 15-18
+  764  cut -d "," -f 15-18 Global\ YouTube\ Statistics.csv 
+  765  cut -d "," -f 14-16 Global\ YouTube\ Statistics.csv 
+  766  cut -d "," -f 13-15 Global\ YouTube\ Statistics.csv 
+  767  cut -d "," -f 10-15 Global\ YouTube\ Statistics.csv 
+  768  cut -d "," -f 10-20 Global\ YouTube\ Statistics.csv 
+  769  cut -d "," -f 5-20 Global\ YouTube\ Statistics.csv 
+  770  cut -d "," -f 10-30 Global\ YouTube\ Statistics.csv 
+  771  cut -d "," -f 20-30 Global\ YouTube\ Statistics.csv 
+  772  cut -d "," -f 20-22 Global\ YouTube\ Statistics.csv 
+  773  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv
+  774  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -c | sort 
+  775  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c | sort 
+  776  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c | sort -r
+  777  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c -d | sort -r
+  778  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 5 | uniq -i -c -d | sort -r
+  779  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 5
+  780  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -complement ","
+  781  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c -d | sort -r
+  782  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 1-4,6-8
+  783  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 1-4,6-8 | uniq -i -c -d | sort -r
+  784  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 1-4,6-8 | uniq -i -c | sort -r
+  785  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 1-4,6-8 | uniq -c | sort -r
+  786  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv
+  787  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -c 8
+  788  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -b 1-8
+  789  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv| cut -b 1-8 | uniq -i -c -d | sort -r
+  790  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c -d | sort -r
+  791  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | uniq -i -c | sort -r
+  792  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -i -c | sort -r
+  793  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -i -c | sort
+  794  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -i -c | sort -k1 -r
+  795  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -i -c | sort -k1
+  796  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -i -c | sort
+  797  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort
+  798  vi Assignment2.txt
+3. 
+  799  ps -u connersp24
+  800  vi Assignment2.txt 
+  801  history > cmds.log
+  802  cat cmds.log | tail
+4.
+  803  vi file.txt
+  804*
+5. 
+  805  ps aux
+  806* 
+Comment: Everything below is not part of the Assignment2. I accidenly messed up and didn't cd into the Assignment2 dir when I started though I did create it. I was just moving Assignment2.txt to Assignemnt2 dir.
+  807  vi Assignment2.txt 
+  808  cd Assignment2.txt
+  809  cd Assignment2
+  810  cd ..
+  811  cd Assignment2
+  812  PATH
+  813  cd ..
+  814  ls 
+  815  cd Assignment2
+  816  ls
+  817  cd ..
+  818  ls $PWD/Assignment2
+  819  find $PWD -type d -name Assignment2
+  820  mv Assignment2.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Assignment2
+  821  ls
+  822  cd Assignment2
+  823  ls 
+  824  vi Assignment2.txt 
+  825  history > cmds.log
+  826  vi cmds.log
+  827  tail -747 cmds.log > cmds.log
+  828  vi cmds.log
+  829  history > cmds.log
+  830  tail -n 740 cmds.log > cmds.log
+  831  vi cmds.log
+  832  history > cmds.log
+  833  vi cmds.log 
+  834  tail -n 740 history > cmds.log
+  835  vi cmds.log 
+  836  history > cmds.log
