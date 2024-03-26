@@ -1,0 +1,16 @@
+Task 1: 
+Woody & Kleiny,United Kingdom,2000000
+DaFuq!?Boom!,United States,9200000
+T-Series,India,9000000
+    first: cut -d "," -f 8-8,16-16 Global\ YouTube\ Statistics.csv | grep <Country> | cut -d "," -f 2 | sort -nr 
+        comment: this was used to find the highest number of the specific country
+    second: cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep <country> | grep <number from first command> > ws3.txt
+
+Task 2:
+WWE,96000000,Sports
+MrBeast,166000000,Entertainment
+Cocomelon - Nursery Rhymes,162000000,Education
+Commands used:
+    first: cut -d "," -f 3-3,5-5 Global\ YouTube\ Statistics.csv | grep <category> | cut -d "," -f 1 | sort -nr
+        Comment: this was used to find the highest number of the specific category
+    second: cut -d "," -f 2-2,3-3,5-5 Global\ YouTube\ Statistics.csv | grep <category> | grep <number found from first command> >> ws3.txt   

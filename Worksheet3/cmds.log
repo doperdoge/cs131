@@ -1,0 +1,78 @@
+  882  cd cs131
+  883  mkdir Worksheet3
+  884  cd Worksheet3
+  885  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  886  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv
+  887  cut -d "," -f 16-17 Global\ YouTube\ Statistics.csv
+  888  cut -d "," -f 20-20 Global\ YouTube\ Statistics.csv
+  889  cut -d "," -f 19-20 Global\ YouTube\ Statistics.csv
+  890  cut -d "," -f 20-21 Global\ YouTube\ Statistics.csv
+  891  cut -d "," -f 16-17 Global\ YouTube\ Statistics.csv
+  892  cut -d "," -f 16-16 Global\ YouTube\ Statistics.csv
+  893  cut -d "," -f 16-16 9-9 Global\ YouTube\ Statistics.csv
+  894  cut -d "," -f 9-9, 16-16 Global\ YouTube\ Statistics.csv
+  895  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv
+  896  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | sort -n
+  897  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | sort -k 2
+  898  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | sort -k 1
+  899  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | sortcut -d "," -f 20-21 Global\ YouTube\ Statistics.csv
+  900  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2
+  901  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort-r
+  902  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort -r
+  903  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort -nr
+  904  cat Global\ YouTube\ Statistics.csv | grep 9200000
+  905  cat Global\ YouTube\ Statistics.csv | grep 9200000 | grep US
+  906  cat Global\ YouTube\ Statistics.csv | grep 9200000 | grep US
+  907  cut -d "," -f 2-2,16-16 Global\ YouTube\ Statistics.csv | grep US | grep 9200000
+  908  cut -d "," -f 2-2,16-16 Global\ YouTube\ Statistics.csv
+  909  cut -d "," -f 2-2,16-16 Global\ YouTube\ Statistics.csv | grep 9200000
+  910  vi ws3.txt
+  911  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort -nr > ws3.txt
+  912  cut -d "," -f 2-2,16-16 Global\ YouTube\ Statistics.csv | grep 9200000 > ws3.txt
+  913  cut -d "," -f 2-2,9-9,16-16 Global\ YouTube\ Statistics.csv | grep 9200000 > ws3.txt
+  914  vi ws3.txt
+  915  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort -nr > ws3.txt
+  916  cut -d "," -f 2-2,9-9,16-16 Global\ YouTube\ Statistics.csv | grep 9200000 >> ws3.txt
+  917  vi ws3.txt 
+  918  exit
+  919  clear
+  920  cd cs131
+  921  cd Worksheet3
+  922  cut -d "," -f 2-2,9-9,16-16 Global\ YouTube\ Statistics.csv | grep 9200000 > ws3.txt
+  923  vi ws3.txt
+  924  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep UK | cut -d "," -f 2 | sort -nr
+  925  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep US | cut -d "," -f 2 | sort -nr
+  926  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep  IN | cut -d "," -f 2 | sort -nr
+  927  cut -d "," -f 9-9,16-16 Global\ YouTube\ Statistics.csv | grep GB | cut -d "," -f 2 | sort -nr
+  928  cut -d "," -f 2-2,9-9,16-16 Global\ YouTube\ Statistics.csv | grep 9000000 >> ws3.txt
+  929  cut -d "," -f 2-2,9-9,16-16 Global\ YouTube\ Statistics.csv | grep 2000000 >> ws3.txt
+  930  vi ws3.txt 
+  931  cut -d "," -f 2-2,9-9,15-15 Global\ YouTube\ Statistics.csv | grep United Kingdom | grep 2000000 > ws3.txt
+  932  cut -d "," -f 2-2,9-9,15-15 Global\ YouTube\ Statistics.csv | grep 'United Kingdom' | grep 2000000 > ws3.txt
+  933  vi ws3.txt 
+  934  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep 'United Kingdom' | grep 2000000 > ws3.txt
+  935  vi ws3.txt 
+  936  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep ‘United States’ | grep 9200000 >> ws3.txt
+  937  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep 'United States' | grep 9200000 >> ws3.txt
+  938  vi ws3.txt 
+  939  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep India | grep 9000000 > ws3.txt
+  940  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep 'United States' | grep 9200000 >> ws3.txt
+  941  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep 'United Kingdom' | grep 2000000 > ws3.txt
+  942  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep 'United States' | grep 9200000 >> ws3.txt
+  943  cut -d "," -f 2-2,8-8,16-16 Global\ YouTube\ Statistics.csv | grep India | grep 9000000 >> ws3.txt
+  944  vi ws3.txt 
+  945  cut -d "," -f 3-3,5-5 Global\ YouTube\ Statistics.csv | grep Sports | cut -d "," -f 2 | sort -nr
+  946  cut -d "," -f 3-4,5-5 Global\ YouTube\ Statistics.csv | grep Sports | cut -d "," -f 2 | sort -nr
+  947  cut -d "," -f 3-4,5-5 Global\ YouTube\ Statistics.csv | grep Sports
+  948  cut -d "," -f 3-4,5-5 Global\ YouTube\ Statistics.csv | grep Sports | cut -d "," -f 1 | sort -nr
+  949  cut -d "," -f 2-2,3-3,5-5 Global\ YouTube\ Statistics.csv | grep Sports | grep 96000000 >> ws3.txt
+  950  vi ws3.txt 
+  951  cut -d "," -f 3-3,5-5 Global\ YouTube\ Statistics.csv | grep Entertainment | cut -d "," -f 1 | sort -nr
+  952  cut -d "," -f 2-2,3-3,5-5 Global\ YouTube\ Statistics.csv | grep Entertainment | grep 166000000 >> ws3.txt
+  953  vi ws3.txt 
+  954  cut -d "," -f 3-3,5-5 Global\ YouTube\ Statistics.csv | grep Education | cut -d "," -f 1 | sort -nr
+  955  cut -d "," -f 2-2,3-3,5-5 Global\ YouTube\ Statistics.csv | grep Entertainment | grep 162000000 >> ws3.txt
+  956  vi ws3.txt 
+  957  cut -d "," -f 2-2,3-3,5-5 Global\ YouTube\ Statistics.csv | grep Education | grep 162000000 >> ws3.txt
+  958  vi ws3.txt 
+  959  history > cmds.log
