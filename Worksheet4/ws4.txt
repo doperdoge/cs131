@@ -1,0 +1,112 @@
+  997  cd Worksheet4
+  998  source ~/.bashrc
+  999  l
+ 1000  ls -ltr
+ 1001  w
+ 1002  ls -l|wc
+ 1003  vi .bash_profile
+ 1004  l
+ 1005  w
+ 1006  cd ..
+ 1007  vi .
+ 1008  cd cs131/
+ 1009  cd Worksheet4
+ 1010  source ~/.bash_profile
+ 1011  w
+	-rw-rw-r-- 1 connersp24 connersp24 200279 Apr  8 20:16 'Global YouTube Statistics.csv'
+	-rw-rw-r-- 1 connersp24 connersp24     11 Apr  8 21:01  0
+	drwxrwxr-x 2 connersp24 connersp24   4096 Apr  8 21:15  Subscribers
+	-rw-rw-r-- 1 connersp24 connersp24     85 Apr  8 22:11  greetings.txt
+	-rw-rw-r-- 1 connersp24 connersp24   4367 Apr  8 22:22  ws4.txt
+ 1012  l
+ 	6      49     351
+ 1013  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+ 1014  cut -d "," -f 3-3, 8-8 Global\ YouTube\ Statistics.csv | grep United States
+ 1015  cut -d "," -f 3-3,8-8 Global\ YouTube\ Statistics.csv | grep United States
+ 1016* cut -d "," -f 1, Global\ YouTube\ Statistics.csv | grep "United States"
+ 1017  cut -d "," -f 3-3,8-8 Global\ YouTube\ Statistics.csv | grep United States | cut -d "," -f 1,1 > United_States.txt
+ 1018  cut -d "," -f 3-3,8-8 Global\ YouTube\ Statistics.csv | grep "United States" | cut -d "," -f 1,1 > United_States.txt
+	gets the subscribers and appends it to the United States file
+ 1019  vi United_States.txt 
+ 1020  cut -d "," -f 3-3,8-8 Global\ YouTube\ Statistics.csv | grep "India" | cut -d "," -f 1,1 > India.txt
+ 	gets the subscribers and appends it to the india.txt file
+ 1021  vi India.txt 
+ 1022  numItems=0; sum=0
+ 1023  India.txt wc -l 
+ 1024  wc -l India.txt 
+	gets the divisor for the average
+ 1025  awk 'BEGIN { for(int i = 0; i < 168; i++) "numItems += $0"}' India.txt 
+ 1026  awk 'BEGIN { for(int i = 0; i < 168; i++) numItems += $0}' India.txt 
+ 1027  awk 'BEGIN { for(int i=0; i<168; i++) numItems += $0}' India.txt 
+ 1028  awk 'BEGIN { for(i=0; i<168; i++) numItems += $0}' India.txt 
+ 1029  echo numItems
+ 1030  echo $numItems 
+ 1031  awk 'BEGIN { for(i=0; i<168; i++) "numItems += $0"}' India.txt 
+ 1032  echo $numItems 
+ 1033  awk 'BEGIN { for(i=0; i<168; i++) $numItems += $0}' India.txt 
+ 1034  echo $numItems 
+ 1035  awk 'BEGIN { for(i=0; i<168; i++) print $0}' India.txt 
+ 1036  awk '{if($0 == $0) sum += $0}' India.txt 
+ 1037  echo $sum 
+ 1038  awk '{if($0 == $0) print $0}' India.txt 
+ 1039  vi India.txt 
+ 1040  awk '{if($0 == $0) print $0}' India.txt 
+ 1041  awk '{if($0 == $0) sum += $0} END { $sum = sum }' India.txt 
+ 1042*  
+ 1043  echo $sum
+ 1044  awk '{sum += $1} END { print sum }' India.txt 
+ 1045  sum=awk '{sum += $1} END { print sum }' India.txt
+ 1046  sum=$awk '{sum += $1} END { print sum }' India.txt
+ 1047* awk '{sum += $1} END { print sum }' India.txt 
+ 1048  echo $sum
+ 1049  sum=`awk '{sum += $1} END { print sum }' India.txt`
+ 1050  echo $sum
+ 1051  sum/168 | bc
+ 1052  echo "4310600000/168" | bc
+	gets the average of the india subscribers
+ 1053  vi ws4_means.txt
+ 1054* echo "4310600000/168" | bc > ws4_means.tx
+ 1055  sum=`awk '{sum += $1} END { print sum }' United_States.txt`
+ 1056  awk '{sum += $1} END { print sum }' United_States.txt 
+ 1057  wc -l United_States.txt 
+	gets the line count for the average
+ 1058  echo "7329500000/313" | bc
+ 1059  echo "7329500000/313" | bc >> ws4_means.txt 
+	gets the average of the united states subscribers
+ 1060  vi ws4_means.txt 
+ 1061  find $PWD -type -d -name Subscribers/
+ 1062  find $PWD -type d -name Subscribers/
+ 1063  find $PWD -type d -name Subscribers
+ 1064  mv India.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Worksheet4/Subscribers
+ 1065  mv United_States.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Worksheet4/Subscribers
+ 1066  cd Subscribers/
+ 1067  ls
+ 1068  cd..
+ 1069  cd ..
+ 1070  ls
+ 1071  cd Subscribers/
+ 1072  vi ws4_means.txt 
+ 1073  rn ws4_means.txt 
+ 1074  rm ws4_means.txt 
+ 1075  cd ..
+ 1076  mv ws4_means.txt /mnt/scratch/SP24_CS131_Jyotika/connersp24/cs131/Worksheet4/Subscribers
+ 1077  cd Subscribers/
+ 1078  vi ws4_means.txt 
+ 1079  cd ..
+ 1080  vi greetings.txt
+ 1081  vi greetings.txt 
+ 1082  sed -i 's/Hello/Hi/g' greetings.txt 
+ 1083  vi greetings.txt 
+ 1084  sed -i '/Doe/d' greetings.txt 
+ 1085  vi greetings.txt 
+ 1086  script ws4.txt
+ 1087  sed -i 's/$/(edited)/' greetings.txt 
+ 1088  vi greetings.txt 
+ 1089  awk '{if($1 == Hello) `sed -i 's/Michael Johnson/Mike Johnson/'`}'
+ 1090  awk '{if($1 == Hello) $sed -i 's/Michael Johnson/Mike Johnson/'}'
+ 1091  awk '{if($1 == Hello) $sed -i 's/"Michael Johnson"/"Mike Johnson"/'}'
+ 1092  sed '/^Hello :/ {s/Michael Johnson/Mike Johnson/}' greetings.txt 
+ 1093  sed -i '/^Hello :/ {s/Michael Johnson/Mike Johnson/}' greetings.txt 
+ 	This is the command used to replace Michael with Mike 
+ 1094  vi greetings.txt 
+ 1095  history > ws4.txt 
