@@ -1,0 +1,170 @@
+  994  cd cs131
+  995  mkdir Assignment3
+Task 1:  
+  996  cd Assignment3
+  997  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  998  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  999  clear
+ 1000  last
+ 1001  ls last.fake 
+ 1002  cat last.fake 
+ 1003  grep "sp24" last.fake > lastsp24.fake
+ 1004  cat lastsp24.fake 
+ 1005  vi Assignment3.txt
+ 1006  ls -l last.fake 
+ 1007  wc -l last.fake 
+ 1008  vi Assignment3.txt 
+ 1009  wc -l lastsp24.fake 
+ 1010  vi Assignment3.txt 
+ 1011  viA
+ 1012  vi A
+ 1013  vi Assignment3.txt 
+
+Task 2:
+ 1014  grep 'sunday' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "The list of people who worked on Sunday are:"} END {print "Kudos to these people for putting in the work"}'
+ 1015  grep 'sunday' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $0} END {print "Kudos to these people for putting in the work"}'
+ 1016  grep 'sunday' lastsp24.fake | awk '{print $1}' | sort | uniq -u | cat
+ 1017  grep 'sunday' lastsp24.fake | awk '{print $1}' | sort | uniq -u
+ 1018  grep 'sunday' lastsp24.fake | awk '{print $1}' | sort | uniq -u > test.txt
+ 1019  cat test.txt 
+ 1020  grep 'sunday' lastsp24.fake | awk '{print $1}'
+ 1021  grep 'sunday' lastsp24.fake | awk '{print $1}' > test.txt 
+ 1022  cat test.txt 
+ 1023  grep 'sunday' lastsp24.fake
+ 1024  grep 'Sunday' lastsp24.fake
+ 1025  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "The list of people who worked on Sunday are:"} END {print "Kudos to these people for putting in the work"}'
+ 1026  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $0} END {print "Kudos to these people for putting in the work"}'
+
+Task 3:
+ 1027  vi Assignment3.txt 
+ 1028  awk '{if(substr($7,0,1) >= 23) print $0}' lastsp24.fake 
+ 1029  awk '{if(substr($7,0,1) >= 23 || (substr($9,0,1) <= 04 && substr($7,3) == 00) print $0}' lastsp24.fake 
+ 1030  awk '{if(substr($7,0,1) >= 23 || (substr($9,0,1) <= 04 && substr($7,3) == 00)) print $0}' lastsp24.fake 
+ 1031  awk '{print substr($7,0,2)}'
+ 1032  awk '{print substr($7,0,2)}' lastsp24.fake 
+ 1033  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($7,3) == 00)) print $0}' lastsp24.fake 
+ 1034  awk '{print substr($9,03)}'
+ 1035  awk '{print substr($9,03)}' lastsp24.fake 
+ 1036  awk '{print substr($9,4)}' lastsp24.fake 
+ 1037  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($7,4) == 00) || (substr($9,0,2) < 4)) print $0}' lastsp24.fake 
+ 1038  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($7,4) == 00) || (substr($9,0,2) < 4)) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -q | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1039  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($7,4) == 00) || (substr($9,0,2) < 4)) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1040  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($7,4) == 00) || (substr($9,0,2) < 4)) print $0}' lastsp24.fake 
+ 1041  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($9,4) == 00) || (substr($9,0,2) < 4)) print $0}' lastsp24.fake 
+ 1042  awk '{if(substr($7,0,2) >= 23 || (substr($9,0,2) <= 04 && substr($9,4) == 00) || (substr($9,0,2) < 04)) print $0}' lastsp24.fake 
+ 1043  awk '{if(substr($7,0,2) >= 23 || (substr($7,0,2) <= 04 && substr($7,4) == 00) || (substr($7,0,2) < 04)) print $0}' lastsp24.fake 
+ 1044  awk '{print substr($7,0,2)}'
+ 1045  awk '{print substr($7,0,2)}' lastsp24.fake 
+ 1046  awk '{if(substr($7,0,2) >= 23) print substr($7,0,2)}' lastsp24.fake 
+ 1047  awk '{if((substr($7,0,2) >= 23) || (substr($7,4) < 04)) print substr($7,0,2)}' lastsp24.fake 
+ 1048  awk '{if((substr($7,0,2) >= 23) || (substr($7,4) < 4)) print substr($7,0,2)}' lastsp24.fake 
+ 1049  awk '{if((substr($7,0,2) >= 23) || (substr($7,0,2) < 4)) print substr($7,0,2)}' lastsp24.fake 
+ 1050  awk '{if((substr($7,0,2) >= 23) || (substr($7,0,2) < 4)) print $0}' lastsp24.fake 
+ 1051  awk '{if (substr($3,0,3) == 172) print $0}'
+ 1052  awk '{if (substr($3,0,3) == 172) print $0}' lastsp24.fake 
+ 1053  awk '{if (substr($3,0,3) == 172) print substr($3,0,3)}' lastsp24.fake 
+ 1054  awk '{if (substr($3,0,3) == 172 && substr($7,0,2) >= 23) print $0}' lastsp24.fake 
+ 1055  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < 4) print $0}' lastsp24.fake 
+ 1056  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < 4)) print $0}' lastsp24.fake 
+ 1057  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < 04)) print $0}' lastsp24.fake 
+ 1058  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) <= 04)) print $0}' lastsp24.fake 
+ 1059  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) <= 04)) print substr($7,0,2)}' lastsp24.fake 
+ 1060  awk '{if (24 < 04) print "something is up"}'
+ 1061  awk '{if (24 < 04) print "something is up"}' test.txt
+ 1062  awk '{if (16 < 04) print "something is up"}' test.txt
+ 1063  awk '{if (01 < 04) print "something is up"}' test.txt
+ 1064  awk '{if (01 < 4) print "something is up"}' test.txt
+ 1065  awk '{if (1 < 4) print "something is up"}' test.txt
+ 1066  cat test.txt 
+ 1067  awk '{if (4 > 1) print "something is up"}' test.txt
+ 1068  awk '{if(4 > 1) print "something is up"}' test.txt
+ 1069  cat test.txt 
+ 1070  ls
+ 1071  awk '{if(4 >= 1) print "something is up"}' test.txt
+ 1072  awk '{if(substr($7,0,2) <= 4) print substr($7,0,2)}' lastsp24.fake 
+ 1073  cat lastsp24.fake 
+ 1074  awk '{if(substr($7,0,2) >= 23) print substr($7,0,2)}' lastsp24.fake 
+ 1075  2
+ 1076  awk '{if(substr($7,0,2) >= 22) print substr($7,0,2)}' lastsp24.fake 
+ 1077  awk '{if(substr($7,0,2) >= 4) print substr($7,0,2)}' lastsp24.fake 
+ 1078  awk '{if(substr($7,0,2) >= 04) print substr($7,0,2)}' lastsp24.fake 
+ 1079  awk '{if(substr($7,0,2) >= 10) print substr($7,0,2)}' lastsp24.fake 
+ 1080  awk '{if(substr($7,0,2) >= 9) print substr($7,0,2)}' lastsp24.fake 
+ 1081  awk '{if(substr($7,0,2) <= "04") print substr($7,0,2)}' lastsp24.fake 
+ 1082  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04") print $0}' lastsp24.fake 
+ 1083  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04")) print $0}' lastsp24.fake 
+ 1084  awk '{if ((substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr$7,0,2) == "04" && substr($7,4) == "00"))) || substr($3,0,3) != 172 && substr) print $0}' lastsp24.fake 
+ 1085* awk '{if ((substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) || (substr($3,0,3) != 172 && (substr($7,0,2) < "04" || (substr$(7,0,
+ 1086  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00" print $0}' lastsp24.fake 
+ 1087  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00")) print $0}' lastsp24.fake 
+ 1088  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) print $0}' lastsp24.fake 
+ 1089  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 23 || substr($6,0,2) < "04" || (substr($6,0,2) == "04" && substr($6,4) == "00"))) print $0}' lastsp24.fake 
+ 1090  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 23 || substr($6,0,2) < "04" || (substr($6,0,2) == "04" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -q | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1091  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 23 || substr($6,0,2) < "04" || (substr($6,0,2) == "04" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1092  vi Assignment3.txt 
+
+Task 4:
+ 1093  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= "05" || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= "05" || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "Night Owls List:"} {print $0} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1094  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= "05" || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= "05" || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1095  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1096  awk '{if (substr($3,0,3) == 172 && ((substr($7,0,2) >= 05 || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00") && substr($7,0,2) >= 05))) print $0} {if (substr($3,0,3) != 172 && ((substr($6,0,2) >= 05 || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00") && substr($6,0,2) >= 05))) print $0}' lastsp24.fake
+ 1097  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || substr($7,0,2) < "09" || ((substr($7,0,2) == "09" && substr($7,4) == "00") && substr($7,0,2) >= 05))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || substr($6,0,2) < "09" || ((substr($6,0,2) == "09" && substr($6,4) == "00") && substr($6,0,2) >= 05))) print $0}' lastsp24.fake
+ 1098  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00" && substr($7,0,2) >= 05)) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00" && substr($6,0,2) >= 05)) print $0}' lastsp24.fake
+ 1099  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || substr($7,0,2) < "09" || (substr($7,0,2) == "09" && substr($7,4) == "00" && substr($7,0,2) >= 05))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || substr($6,0,2) < "09" || (substr($6,0,2) == "09" && substr($6,4) == "00" && substr($6,0,2) >= 05))) print $0}' lastsp24.fake
+ 1100  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || substr($7,0,2) < "09" || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || substr($6,0,2) < "09" || (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1101  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($6,0,2) >= 05) || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= 05)|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1102  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= 05) || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= 05)|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1103  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= 05) || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) >= 05 && substr($6,0,2) < "09")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1104  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= 05)|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1105  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= 05) || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= 05)|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1106  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= 05) || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1107  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1108  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "Early Birds List:"} {print $0} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1109  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake
+ 1110  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -u | awk 'BEGIN {print "Early Birds List:"} {print $0} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1111  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq -d -u | awk 'BEGIN {print "Early Birds List:"} {print $0} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1112  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 05 || (substr($7,0,2) < "09" && substr($7,0,2) >= "05") || (substr($7,0,2) >= 05 && substr($7,0,2) == "09" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 05 || (substr($6,0,2) < "09" && substr($6,0,2) >= "05")|| (substr($6,0,2) >= 05 && substr($6,0,2) == "09" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print $0} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1113  vi Assignment3.txt 
+ 1114  awk '{if (substr($3,0,3) == 172 && (substr($7,0,2) >= 23 || substr($7,0,2) < "04" || (substr($7,0,2) == "04" && substr($7,4) == "00"))) print $0} {if (substr($3,0,3) != 172 && (substr($6,0,2) >= 23 || substr($6,0,2) < "04" || (substr($6,0,2) == "04" && substr($6,4) == "00"))) print $0}' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print $0 } END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1115  vi Assignment3.txt 
+
+task 5:
+ 1116  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $0} END {print "Kudos to these people for putting in the work"}'
+ 1117  vi Assignment3.txt 
+ 1118  awk '{print $1}' | awk '{if (^[a]) print $0}' 
+ 1119  awk '{print $1}' | awk '{if (^([a])) print $0}' lastsp24.fake 
+ 1120  awk '{print $1}' | awk '{if [[$0 =~ ^\a]] print $0}' lastsp24.fake 
+ 1121  awk '{print $1}' | if [[$0 =~ ^[a]]] print $0 lastsp24.fake ; awk '{print $1}' lastsp24.fake | if [[$0 =~ ^[a]]] print $0 
+ 1122  awk '{print $1}' lastsp24.fake | if [[$0 =~ ^[a]]] print $0 
+ 1123  awk -e '$1 ~ ^[a] {print $0}'
+ 1124  awk -e '$1 ~ ^/a/ {print $0}'
+ 1125  awk -e '$1 ~ /^a/ {print $0}'
+ 1126  awk -e '$1 ~ /^a/ {print $0}' lastsp24.fake 
+ 1127  awk -e '$1 ~ /^t/ {print $0}' lastsp24.fake 
+ 1128  vi Assignment3.txt 
+ 1129  vi A
+ 1130  vi Assignment3.txt 
+
+task 6:
+ 1131  awk -e '$1 ~ /^t/ {print $0}' -e '$ lastsp24.fake 
+ 1132  cat passwd.fake 
+ 1133  wq
+ 1134  awk -e -F ':' '$1 ~ /^t/ && $ 3%2 == 0 {print $0}' lastsp24.fake 
+ 1135  awk -e -F: '$1 ~ /^t/ && $ 3%2 == 0 {print $0}' lastsp24.fake 
+ 1136  awk -e -v FS=: '$1 ~ /^t/ && $ 3%2 == 0 {print $0}' lastsp24.fake 
+ 1137  awk -e -v FS=: '($1 ~ /^a/ && $ 3%2 == 0) {print $0}' lastsp24.fake 
+ 1138  awk -e -v FS=: '($1 ~ /^a/ && $ 3%2 == 0) {print $0}' passwd.fake 
+ 1139  awk -v FS=: -e '($1 ~ /^a/ && $ 3%2 == 0) {print $0}' passwd.fake 
+ 1140  vi Assignment3.txt 
+
+task 7:
+ 1141  sed 's/[a-z][A-Z][0-9][ ]/g' passwd.fake 
+ 1142  sed 's/[a-z][A-Z][0-9][ ]//g' passwd.fake 
+ 1143  sed 's/[a-z]//g' -e 's/[A-Z]//g' passwd.fake 
+ 1144  sed 's/[a-z]//g' passwd.fake 
+ 1145  sed -e 's/[a-z]//g' -e 's/[A-Z]//g' passwd.fake 
+ 1146  sed -e 's/[a-z]//g' -e 's/[A-Z]//g' -e 's/[0-9]//g' passwd.fake 
+ 1147  sed -e 's/[a-z]//g' -e 's/[A-Z]//g' -e 's/[0-9]//g' -e 's/ //g' passwd.fake 
+ 1148  sed -e 's/[a-z]//g' -e 's/[A-Z]//g' -e 's/[0-9]//g' -e 's/ //g' passwd.fake | sort -u
+ 1149  vi Assignment3.txt 
+ 1150  history > cmds.log
