@@ -1,0 +1,115 @@
+  994  ls
+  995  mkdir Worksheet5
+  996  cd Worksheet5
+  997  clear
+  998  vi ws5.txt
+  999  mkdir United_States
+ 1000  cd United_States/
+ 1001  vi Music.txt
+ 1002  vi Entertainment.txt
+ 1003  vi Gaming.txt
+ 1004  vi Comedy.txt
+ 1005  vi script.sh
+ 1006  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+ 1007  ls
+ 1008  vi script.sh 
+ 1009  ls
+ 1010  vi script.sh 
+ 1011  bash script.sh 
+ 1012  vi script.sh 
+ 1013  bash script.sh 
+ 1014  vi script.sh \
+ 1015  vs script.sh 
+ 1016  vi script.sh 
+ 1017  bash script.sh 
+ 1018  vi script.sh 
+ 1019  bash script.sh 
+ 1020  vi script.sh 
+ 1021  bash script.sh 
+ 1022  vi script.sh 
+ 1023  bash script.sh 
+ 1024  vi script.sh 
+ 1025  bash script.sh 
+ 1026  vi script.sh 
+ 1027  bash script.sh 
+ 1028  vi script.sh 
+ 1029  bash script.sh 
+ 1030  ./script.sh
+ 1031  vi script.sh 
+ 1032  bash script.sh 
+ 1033  vi script.sh 
+ 1034  bash script.sh 
+ 1035  vi script.sh 
+ 1036  bash script.sh 
+ 1037  vi script.sh 
+ 1038  ls
+ 1039  pwd
+ 1040  vi script.sh 
+ 1041  bash script.sh 
+ 1042  vi script.sh 
+ 1043  pwd
+ 1044  vi script.sh 
+ 1045  bash script.sh 
+ 1046  vi script.sh 
+ 1047  bash script.sh 
+ 1048  vi script.sh 
+ 1049  bash script.sh 
+ 1050  vi script.sh 
+ 1051  bash script.sh 
+ 1052  vi script.sh 
+ 1053  bash script.sh 
+ 1054  vi script.sh 
+ 1055  bash script.sh 
+ 1056  vi script.sh 
+ 1057  bash script.sh 
+ 1058  vi script.sh 
+ 1059  bash script.sh 
+ 1060  vi script.sh 
+ 1061  bash script.sh 
+ 1062  vi script.sh 
+ 1063  bash vi
+ 1064  bash script.sh 
+ 1065  vi script.sh 
+ 1066  bash script.sh 
+ 1067  vi script.sh 
+ 1068  bash script.sh 
+ 1069  vi script.sh 
+ 1070  bash script.sh 
+ 1071  vi script.sh 
+ 1072  bash script.sh 
+ 1073  vi script.sh 
+ 1074  bash script.sh 
+ 1075  vi script.sh 
+ 1076  bash script.sh 
+ 1077  vi script.sh 
+ 1078  bash script.sh 
+ 1079  vi script.sh 
+ 1080  pwd
+ 1081  vi script.sh 
+ 1082  bash script.sh 
+ 1083  vi Entertainment.txt 
+ 1084  vi script.sh 
+ 1085  bash script.sh 
+ 1086  vi Entertainment.txt 
+ 1087  vi Comedy.txt 
+ 1088  vi G
+ 1089  rm G
+ 1090  vi Gaming.txt 
+ 1091  vi script.sh 
+ 1092  bash script.sh 
+ 1093  vi Gaming.txt 
+ 1094  vi Music.txt 
+ 1095  wc -l Gaming.txt 
+ 1096  wc -l Music.txt 
+ 1097  wc -l Entertainment.txt 
+ 1098  wc -l Comedy.txt 
+ 1099  cd ..
+ 1100  ls
+ 1101  vi ws5.txt 
+ 1102  vi scriptUsed.sh
+ 1103  cd United_States/
+ 1104  vi script.sh 
+ 1105  cd ..
+ 1106  vi scriptUsed.sh 
+ 1107  histroy > cmds.log
+ 1108  history > cmds.log
