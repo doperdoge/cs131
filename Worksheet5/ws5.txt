@@ -1,4 +1,4 @@
 26 lines in Gaming.txt
-162 lines in Music.txt
-324 lines in Entertainment.txt
-32 lines in Comedy.txt
+73 lines in Music.txt
+68 lines in Entertainment.txt
+22 lines in Comedy.txt
